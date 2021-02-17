@@ -533,6 +533,10 @@ nav > ul {
   background-attachment: fixed;
 }
 
+#product-picture:hover {
+  transform:scale(3.0);
+}
+
 .product > .level {
   background-color: rgb(88, 222, 255);
   color: black;
