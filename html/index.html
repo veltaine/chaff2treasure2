@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaff to Treasure</title>
+    <!-- The order of the stylesheets matter, the last one overtakes all others! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fc0bcca8a3.js" crossorigin="anonymous"></script>
+
+
+      <SCRIPT LANGUAGE="JavaScript">
+
+    // This snippet closes collapsible navbar after clicked outside
+    $(document).ready(function () {
+     $(document).click(function (event) {
+         var clickover = $(event.target);
+         var _opened = $(".navbar-collapse").hasClass("show");
+         if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+             $(".navbar-toggler").click();
+         }
+     });
+   });
+   //  End 
+   </script>
+  </head>
+
+<!-- Start of Website -->
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a href="#"><img id="navbar-logo" src="/images/navbarlogo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-navigation" aria-controls="navbar-navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbar-navigation">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <a class="nav-link" href="#features">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#how-it-works">Process</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#gallery">Gallery</a>
+      </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Start of Page Below Navigation -->
+<section id="logo">
+        <div class="container">
+          <img id="mainLogo" src="/images/logo.png"> 
+
+        <div class="container">
+          <h1 id="slogan">Turning worthless into worth it</h1>
+        </div>
+
+      </div>
+</section>
+
+  <!-- Pricing section above footer -->
+<section id="features">
+    <div class="container">
+      <div class="title" id="section-title">Charming and Unique</div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="desc">
+            <h3 id="section-subtitle">Unique Collectibles</h3>
+            <p>
+              Fashion Accessory that can suit any mood!
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="desc">
+            <h3 id="section-subtitle">Great Gift Ideas</h3>
+              <p>
+                One of a kind, perfect for those that have it all!
+              </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="desc">
+            <h3 id="section-subtitle">Make it your own!</h3>
+              <p>
+                Customize with pictures of your choosing!
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Video of the how to process -->
+  <section id="how-it-works">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="title" id="section-title">
+            How It Is Done
+          </div>
+          <div class="videoWrapper">
+            <iframe
+              id="video"
+              src="https://www.youtube.com/embed/oukeJf-7kQ4"
+              frameborder="0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Pricing section above footer -->
+  <section id="pricing">
+    <div class="container">
+      <div class="title" id="section-title"> What Do They Cost?</div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="product">
+            <div class="level">Random Pick</div>
+            <h2>$5</h2>
+              <p>Random pendant or charm! <br>Choose charm or pendant, and one will be randomly selected and sent to you.</p>
+            <button class="btn">Select</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product">
+            <div class="level">Pick Your Own</div>
+            <h2>$10</h2>
+              <p>Choose pendant or charm. <br> Choose a design from the offerings listed in the pick your own list, or request to have a specific one made for a small upcharge.</p>
+            <button class="btn">Select</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product">
+            <div class="level">Custom Photo</div>
+            <h2>$40</h2>
+            <p>Have one made!  Send a photo that you'd like placed into a pendant or charm, or both!  Photos will be fitted into a 1x1" grid and printed and cut to fit the frame.</p>
+            <button class="btn">Select</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Photo gallery, may need reconstruction -->
+    <section id="gallery">
+      <div class="container" >
+        <div class="title" id="section-title">Product Gallery</div>
+          <div class="row">
+            <div class="column">
+              <a href="keycharms.html" id="catalog-button">
+              <img id="product-picture" src="/images/pendantbag.jpg" alt="" class="product-picture">
+                Key Charms</a>
+            </div>
+            <div class="column">
+              <a href="pendants.html" id="catalog-button">
+              <img id="product-picture" src="/images/necklace1.jpg" alt="" class="product-picture">
+                Necklaces</a>
+            </div>
+            <div class="column">
+              <a href="magnets.html" id="catalog-button">
+              <img id="product-picture" src="/images/magnets.jpg" alt="" class="product-picture">
+                Magnets</a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+  <!-- Footer Section -->
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2021, GVeltaine Brand</span>
+    </footer>
+
+</body>
+</html>
+  
+
+  <!-- To be added later -->
+  <!-- <div class="container-fluid" id="logo-sub-header">
+    <div class="container">
+      <h1 id="special-offers">Personalized info? Sign me up!</h1></div>
+        <div class="container">
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input
+            name="name"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+            />
+          </form>
+    <div class="container">
+      <button type="button" id="catalog-button">Sign me up</button>
+    </div>
+  </div>
+  </div> -->
