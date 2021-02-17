@@ -526,10 +526,11 @@ nav > ul {
 }
 
 #product-picture {
+  max-width: 33vw;
+  max-height: 33vh;
   border: 1px solid white;
-  background-image: url("../images/chaff.jpg");
+  background-image: url("/images/chaff.jpg");
   background-attachment: fixed;
-  background-size: cover;
 }
 
 .product > .level {
