@@ -391,7 +391,7 @@ nav > ul {
   flex-direction: row;
   align-items: center;
   padding: 1em;
-  background-image: url("images/featuresbg.png");
+  background-image: url("../images/featuresbg.png");
   background-attachment: fixed;
   background-size: cover;
   
@@ -402,7 +402,7 @@ nav > ul {
   background: turquoise;
   padding: 1rem;
   display: flex;  
-  background-image: url("images/processbg.png");
+  background-image: url("../images/processbg.png");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -412,7 +412,7 @@ nav > ul {
   flex-direction: row;
   align-items: center;
   padding: 1em;
-  background-image: url("images/pricebg.png");
+  background-image: url("../images/pricebg.png");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -527,7 +527,7 @@ nav > ul {
 
 #product-picture {
   border: 1px solid white;
-  background-image: url("images/chaff.jpg");
+  background-image: url("../images/chaff.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -607,7 +607,7 @@ nav > ul {
 
 footer {
   margin-top: 30px;
-  background-image: url("images/emailbg.png");
+  background-image: url("../images/emailbg.png");
   background-attachment: fixed;
   background-size: cover;
   padding: 20px;
