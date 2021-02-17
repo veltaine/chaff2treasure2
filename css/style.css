@@ -534,7 +534,7 @@ nav > ul {
 }
 
 #product-picture:hover {
-  transform:scale(2.0);
+  transform:scale(1.5);
 }
 
 .product > .level {
