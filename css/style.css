@@ -123,15 +123,16 @@ header {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+  
   }
 }
 
-.logo > img {
+/* .logo > img {
   padding-left: 50px;
   width: 100%;
   height: auto;
   object-fit: contain;
-} 
+}  */
 
 @media (max-width: 650px) {
   .logo > img {
@@ -322,7 +323,9 @@ div#section-title {
 }
 
 #slogan {
-  color: white;
+  color: rgb(37, 37, 37);
+  padding-top: 50px;
+  font-size: 3rem;
 }
 
 
@@ -381,10 +384,7 @@ nav > ul {
   }
 }
 
-/* backgrounds for website sections */
-#logo {
-  margin-top: 40px;
-}
+
 
 #features {
   display: flex;
@@ -426,10 +426,17 @@ nav > ul {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* padding: 2rem; */
+  padding-top: 7rem;
+  background-image: url("../images/wavybackground.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
+
+/* backgrounds for website sections */
+/* #logo {
+  margin-top: 40px;
+} */
+
 
 #logo > h2 {
   margin-bottom: 20px;
@@ -529,7 +536,7 @@ nav > ul {
   max-width: 33vw;
   max-height: 33vh;
   border: 1px solid white;
-  background-image: url("/images/chaff.jpg");
+  background-image: url("/images/wavybackground.jpg");
   background-attachment: fixed;
 }
 
@@ -612,7 +619,7 @@ nav > ul {
 
 footer {
   margin-top: 30px;
-  background-image: url("../images/emailbg.png");
+  background-image: url("../images/wavybackground.jpg");
   background-attachment: fixed;
   background-size: cover;
   padding: 20px;
