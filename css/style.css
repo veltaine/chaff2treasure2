@@ -377,14 +377,11 @@ nav > ul {
   flex-direction: column;
 }
 
-
 @media (max-width: 768px) {
   nav > ul {
     flex-direction: row;
   }
 }
-
-
 
 #features {
   display: flex;
@@ -539,10 +536,10 @@ nav > ul {
   background-image: url("/images/wavybackground.jpg");
   background-attachment: fixed;
 }
-
+/* 
 #product-picture:hover {
   transform:scale(1.5);
-}
+} */
 
 .product > .level {
   background-color: rgb(88, 222, 255);
