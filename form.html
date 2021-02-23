@@ -1,0 +1,151 @@
+<!--
+	This very basic html file and the assets folder make the form work. Use this page as a starting point or copy the form code into your projects.
+
+	Thank you for using formbakery.com
+-->
+
+<html>
+<head>
+	<title>Order Form</title>
+
+	<!-- you need this for non-english text -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- load form styles -->
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+
+	<!-- load jquery if not already loaded, the only dependency from google's CDN -->
+	<script type="text/javascript">
+		/*<![CDATA[*/
+		window.jQuery || document.write('<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">\x3C/script>');
+		/*]]>*/
+	</script>
+
+	<!-- load the javascript required to validate and submit the form via ajax -->
+	<script type="text/javascript" src="assets/main.js"></script>
+</head>
+
+<body>
+
+<!-- begin form html -->
+<form id="order-form"  action="assets/sendform.php" method="post">
+	<ul>
+		<li>
+			<ul>
+				<li><label>Type</label></li>
+				<li><label><input type="checkbox" name="type[]" value="Charm Random Pick              $5 each" checked >Charm Random Pick              $5 each</label></li>
+				<li><label><input type="checkbox" name="type[]" value="Charm Catalog Pick               $6 each" >Charm Catalog Pick               $6 each</label></li>
+				<li><label><input type="checkbox" name="type[]" value="Pendant Random Pick           $8 each" >Pendant Random Pick           $8 each</label></li>
+				<li><label><input type="checkbox" name="type[]" value="Pendant Catalog Pick            $9 each" >Pendant Catalog Pick            $9 each</label></li>
+				<li><label><input type="checkbox" name="type[]" value="Magnet Random Pick            $4 each" >Magnet Random Pick            $4 each</label></li>
+				<li><label><input type="checkbox" name="type[]" value="Magnet Catalog Pick             $5 each" >Magnet Catalog Pick             $5 each</label></li>
+			</ul>
+		</li>
+		<li class="default ">
+			<label for="id_charm-catalog-id-a">Charm Catalog ID (A#)</label>
+			<input type="text" name="charm-catalog-id-a" id="id_charm-catalog-id-a" />
+		</li>
+		<li class="default">
+			<label for="id_pendant-catalog-id-b">Pendant Catalog ID (B#)</label>
+			<input type="text" name="pendant-catalog-id-b" id="id_pendant-catalog-id-b" />
+		</li>
+		<li class="default">
+			<label for="id_magnet-catalog-id-c">Magnet Catalog ID (C#)</label>
+			<input type="text" name="magnet-catalog-id-c" id="id_magnet-catalog-id-c" />
+		</li>
+		<li class="default required">
+			<label for="id_name">Name</label>
+			<input type="text" name="name" id="id_name" />
+		</li>
+		<li class="default required">
+			<label for="id_address-line-1">Address Line 1</label>
+			<input type="text" name="address-line-1" id="id_address-line-1" />
+		</li>
+		<li class="default">
+			<label for="id_address-line-2">Address Line 2</label>
+			<input type="text" name="address-line-2" id="id_address-line-2" />
+		</li>
+		<li class="default">
+			<label for="id_special-address-instructions">Special Address Instructions</label>
+			<input type="text" name="special-address-instructions" id="id_special-address-instructions" />
+		</li>
+		<li class="default required">
+			<label for="id_city">City</label>
+			<input type="text" name="city" id="id_city" />
+		</li>
+		<li>
+			<label>State</label>
+			<select name="state" id="id_state">
+				<option value="alabama">Alabama</option>
+				<option value="alaska">Alaska</option>
+				<option value="arizona">Arizona</option>
+				<option value="arkansas">Arkansas</option>
+				<option value="california">California</option>
+				<option value="colorado">Colorado</option>
+				<option value="connecticut">Connecticut</option>
+				<option value="delaware">Delaware</option>
+				<option value="florida">Florida</option>
+				<option value="georgia">Georgia</option>
+				<option value="hawaii">Hawaii</option>
+				<option value="idaho">Idaho</option>
+				<option value="illinois">Illinois</option>
+				<option value="indiana">Indiana</option>
+				<option value="iowa">Iowa</option>
+				<option value="kansas">Kansas</option>
+				<option value="kentucky">Kentucky</option>
+				<option value="louisiana">Louisiana</option>
+				<option value="maine">Maine</option>
+				<option value="maryland">Maryland</option>
+				<option value="massachsetts">Massachsetts</option>
+				<option value="michigan">Michigan</option>
+				<option value="minnesota">Minnesota</option>
+				<option value="mississippi">Mississippi</option>
+				<option value="missouri">Missouri</option>
+				<option value="montana">Montana</option>
+				<option value="nebrasks">Nebrasks</option>
+				<option value="nevada">Nevada</option>
+				<option value="new-hampshire">New Hampshire</option>
+				<option value="new-jersey">New Jersey</option>
+				<option value="new-mexico">New Mexico</option>
+				<option value="new-york">New York</option>
+				<option value="north-caroline">North Caroline</option>
+				<option value="north-dakota">North Dakota</option>
+				<option value="ohio">Ohio</option>
+				<option value="oklahoma">Oklahoma</option>
+				<option value="oregon">Oregon</option>
+				<option value="pennsylvania">Pennsylvania</option>
+				<option value="rhode-island">Rhode Island</option>
+				<option value="south-carolina">South Carolina</option>
+				<option value="south-dakota">South Dakota</option>
+				<option value="tennessee">Tennessee</option>
+				<option value="texas">Texas</option>
+				<option value="utah">Utah</option>
+				<option value="vermont">Vermont</option>
+				<option value="virginia">Virginia</option>
+				<option value="washington">Washington</option>
+				<option value="west-virginia">West Virginia</option>
+				<option value="wisconsin">Wisconsin</option>
+				<option value="wyoming">Wyoming</option>
+			</select>
+		</li>
+		<li class="default required">
+			<label for="id_zip-code">Zip Code</label>
+			<input type="text" name="zip-code" id="id_zip-code" />
+		</li>
+		<li class="default required">
+			<label for="id_email">Email</label>
+			<input type="text" name="email" id="id_email" />
+		</li>
+		<li>
+			<label for="id_additional-notes">Additional Notes</label>
+			<textarea name="additional-notes" id="id_additional-notes"></textarea>
+		</li>
+		<li>
+			<input type="submit" value="Send" />
+		</li>
+	</ul>
+</form>
+<!-- end form html -->
+
+</body>
+</html>
