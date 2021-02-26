@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-image: url(/images/processbg.jpg);
+  background-image: url(images/processbg.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
