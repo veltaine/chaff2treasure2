@@ -312,7 +312,7 @@ nav > ul {
   max-width: 33vw;
   max-height: 100vh;
   border: 1px solid white;
-  background-image: url("/images/wavybackground.jpg");
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,0,0,1) 37%, rgba(253,187,45,1) 100%);
   background-attachment: fixed;
 }
 
