@@ -359,8 +359,8 @@ nav > ul {
   background-image: url("../images/pricebg.png");
   background-attachment: fixed;
   background-size: cover;
-}
-
+} 
+ 
 #catalog-button {
   font-size: 1em;
   text-transform: uppercase;
